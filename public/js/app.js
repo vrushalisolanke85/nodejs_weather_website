@@ -1,4 +1,4 @@
-console.log("Console javascript text")
+
 const weatherForm=document.querySelector('form')
 const search=document.querySelector('input')
 const messageOne=document.querySelector('#message_1')
