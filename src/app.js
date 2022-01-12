@@ -4,6 +4,8 @@ const app=express()
 const path=require('path')
 const hbs=require('hbs')
 
+const port=process.env.PORT||3000
+
 //setting path for customise views
 const publicDirPath=path.join(__dirname,'../public')
 const viewsPath=path.join(__dirname,'../template/views')
@@ -79,6 +81,6 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log('Server connected successfully on port 3000!!!!!')
+app.listen(port,()=>{
+    console.log('Server connected successfully on port'+port)
 })
